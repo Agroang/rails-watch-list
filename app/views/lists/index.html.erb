@@ -1,6 +1,8 @@
-<h1>List of Categories</h1>
-<% @lists.each do |list| %>
-<p><%= link_to list.name, list_path(list) %></p>
-<% end %>
-
-<%= link_to "create a list", new_list_path %>
+<div class="container mt-2 col-xs-1 align-center">
+  <h1 class="text-center justify-content-between">List of Categories</h1>
+</div>
+<div class="container m-2">
+  <% @lists.each do |list| %>
+  <p class="m-2"><%= link_to list.name, list_path(list) %></p>
+  <% end %>
+</div>

@@ -1,7 +1,21 @@
-<h1><%= @list.name %></h1>
+<div class="container mt-2 col-xs-1 align-center">
+  <h1 class="text-center justify-content-between"><%= @list.name %></h1>
+</div>
+<div class="container">
+  <div class="cards">
+    <% @list.bookmarks.each do |bookmark| %>
+    <div class="card-product">
+      <img src=<%= bookmark.movie.poster_url %>>
+      <div class="card-product-infos">
+        <p><%= bookmark.comment %><%= link_to bookmark_path(bookmark) , method: :delete, data: { confirm: "Do you want to delete" } do %>
+            <i class="fas fa-trash-alt"></i>
+        <% end %></span></p>
+      </div>
+    </div>
+    <% end %>
+  </div>
+</div>
 
-<%= link_to "Add a movie", new_list_bookmark_path(@list) %>
-
-<% @list.bookmarks.each do |bookmark| %>
-<p><%= bookmark.comment %></p>
-<% end %>
+<div class="container mt-2 col-xs-1 align-center">
+  <%= link_to "Add a movie", new_list_bookmark_path(@list), class: "btn btn-primary" %>
+</div>
