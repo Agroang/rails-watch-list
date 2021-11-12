@@ -6,3 +6,16 @@ body {
 h1 {
   text-shadow: 0.5px 0.5px 0.5px $gray;
 }
+
+.rotate {
+  animation: rotation 4s infinite linear;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
