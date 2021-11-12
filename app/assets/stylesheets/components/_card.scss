@@ -1,8 +1,8 @@
 .card-product {
   overflow: hidden;
   height: 160px;
-  background: white;
-  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  background: $purplish-blue;
+  box-shadow: 0 0 15px rgba(0,0,0,0.4);
   display: flex;
   align-items: center;
 }
@@ -20,7 +20,7 @@
 }
 
 .card-product p {
-  font-size: 12px;
+  font-size: 15px;
   line-height: 1.4;
   opacity: .7;
   margin-bottom: 0;
@@ -31,7 +31,11 @@
   padding: 16px;
 }
 
-
+.card-product-infos a {
+  text-decoration: none;
+  font-size: 21px;
+  color: $gray;
+}
 
 .cards {
   display: grid;

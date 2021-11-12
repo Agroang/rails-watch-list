@@ -1,1 +1,8 @@
 // Specific CSS for your home-page
+body {
+  background-color: $purple;
+}
+
+h1 {
+  text-shadow: 0.5px 0.5px 0.5px $gray;
+}

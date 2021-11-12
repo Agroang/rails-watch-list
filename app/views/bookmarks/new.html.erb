@@ -1,5 +1,7 @@
-<h1>Add a movie</h1>
-<br>
+<div class="container mt-2 col-xs-1 align-center">
+  <h1 class="text-center justify-content-between">Add a Movie🎞</h1>
+</div>
+
 <%= simple_form_for [@list, @bookmark] do |f| %>
   <%= f.input :comment %>
   <%= f.association :movie, prompt: "Choose a movie" %>

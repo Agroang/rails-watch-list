@@ -1,5 +1,7 @@
-<h1>Make a new list</h1>
-<br>
+<div class="container mt-2 col-xs-1 align-center">
+  <h1 class="text-center justify-content-between">Make a new List</h1>
+</div>
+
 <%= simple_form_for @list do |f| %>
   <%= f.input :name %>
   <%= f.input :photo, as: :file %>
