@@ -9,9 +9,6 @@
         <%= list.photo.attached? ? cl_image_tag(list.photo.key, crop: :fill) : image_tag("https://f4.bcbits.com/img/0017780576_10.jpg") %>
         <div class="card-product-infos">
           <p class="m-2"><%= link_to list.name, list_path(list) %></p>
-          <span><%= link_to list_path(list) , method: :delete, data: { confirm: "Do you want to delete" } do %>
-    <i class="fas fa-trash-alt"></i>
-    <% end %></span>
         </div>
       </div>
     <% end %>
