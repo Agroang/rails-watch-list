@@ -3,3 +3,28 @@ Delete method on index:
 <span><%= link_to list_path(list) , method: :delete, data: { confirm: "Do you want to delete" } do %>
     <i class="fas fa-trash-alt"></i>
     <% end %></span>
+
+things that where on index before:
+
+
+    <% if list.photo.attached? %>
+      <%= cl_image_tag list.photo.key, height: 300, width: 400, crop: :fill %>
+    <% else %>
+      <p>No image added</p>
+    <% end %>
+
+
+<div class="container">
+  <div class="cards">
+    <% @list.bookmarks.each do |bookmark| %>
+    <div class="card-product">
+      <img src=<%= bookmark.movie.poster_url %>>
+      <div class="card-product-infos">
+        <p><%= bookmark.comment %><%= link_to bookmark_path(bookmark) , method: :delete, data: { confirm: "Do you want to delete" } do %>
+            <i class="fas fa-trash-alt"></i>
+        <% end %></span></p>
+      </div>
+    </div>
+    <% end %>
+  </div>
+</div>
