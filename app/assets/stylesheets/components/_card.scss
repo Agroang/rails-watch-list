@@ -1,10 +1,12 @@
 .card-product {
   overflow: hidden;
   height: 160px;
-  background: $purplish-blue;
-  box-shadow: 0 0 15px rgba(0,0,0,0.4);
+  background:#243036ed;
+  box-shadow: 0 0 5px rgb(255, 255, 255);
   display: flex;
   align-items: center;
+  border-radius: 16px;
+  border: 2px solid grey;
 }
 
 .card-product img {
@@ -34,7 +36,9 @@
 .card-product-infos a {
   text-decoration: none;
   font-size: 21px;
-  color: $gray;
+  color: white;
+  text-shadow: black 1px 1px 1px;
+  font-family: 'Permanent Marker', cursive !important;
 }
 
 .cards {

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>RailsWatchList</title>
+    <title>Watch List</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -13,7 +13,7 @@
   <body>
       <div class="navbar navbar-expand-sm navbar-light navbar-lewagon">
       <%= link_to lists_path, class: "navbar-brand" do %>
-        <%= image_tag ("star.png"), class: "rotate" %>
+        <i class="fas fa-film"></i>
       <% end %>
 
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
